@@ -1,0 +1,65 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 1060px;
+    margin: 4vh 0 2vh 6vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 9.1);
+    position: relative;
+    background-color: #fff;
+}
+
+.accordion-header {
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    color: #000; /* Default text color */
+}
+
+.accordion-header span{
+    font-size: 2rem;
+}
+
+.accordion-header.active {
+    background-color: #B9FF66;
+    color: #B9FF66; /* Text color for active state */
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px 25px;
+    background-color: #B9FF66;
+    border-top: 1px solid #B9FF66;
+    border-radius: 0 0 15px 15px;
+}
+
+.accordion-header.active + .accordion-content {
+    display: block;
+    background-color: #B9FF66;
+}
+
+.accordion-item.active {
+    border-color: #B9FF66; /* Change border color for active item */
+    background-color: #B9FF66; /* Change background color for active item */
+}
+
+.accordion-header.active {
+    background-color: #B9FF66; /* Change header background color for active item */
+    color: #B9FF66; /* Adjust text color for better contrast */
+}
+
+.accordion-content.show {
+    display: block;
+}

@@ -1,0 +1,79 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #f6f6f6;
+    display: flex;
+    height: 90vh;
+}
+
+.form-container {
+    background-color: #f6f6f6;
+    padding: 40px;
+    border-radius: 50px;
+    position: relative;
+    width: 520px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form-header label {
+    font-size: 18px;
+}
+
+.form-header input[type="radio"] {
+    margin-right: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-size: 14px;
+    opacity: 1; /* Make sure the placeholder is visible */
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #333;
+}
+

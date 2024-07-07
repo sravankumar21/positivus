@@ -1,0 +1,95 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.services-cards {
+    display: grid;
+    height: 70vh;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 40px; /* Space between cards */
+    padding: 0 30px; /* Padding left and right */
+    justify-items: center; /* Center items horizontally */
+    margin-top: 20px;
+    margin-bottom: 26vh;
+}
+
+.card {
+    background-color: white;
+    border: 0px solid #ddd;
+    border-radius: 65px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 4.4);
+    padding: 50px;
+    width: 55vh; 
+    height: 14vh;/* Adjust width to fit within the grid */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.green-card {
+    background-color: #B9FF66;
+}
+
+.card.dark-card {
+    background-color: #191A23;
+}
+
+.card-content {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-title span {
+    background-color: #B9FF66;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.card.dark-card .card-title span {
+    background-color: white;
+}
+
+.card-title-green span {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.learn-more-container {
+    display: flex;
+    align-items: center;
+}
+
+.learn-more-icon {
+    margin-right: 10px;
+    color: black;
+}
+
+.card.dark-card .learn-more-icon {
+    margin-right: 10px;
+    color: white;
+}
+
+.card.dark-card .learn-more-text {
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+} 
+
+.learn-more-text {
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+}
+
+.learn-more-text:hover {
+    text-decoration: underline;
+}
+
+.card-image-small {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}

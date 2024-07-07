@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Screenshot 2024-07-05 at 8.08.42 PM.png" alt="Digital Marketing">
+            </div>
+            <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Use Cases</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+                <button class="btn">Request a quote</button>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="text-content">
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="btn2">Book a Consultation</button>
+            </div>
+            <div class="image-content">
+                <img src="images/Screenshot 2024-07-04 at 7.50.46 PM.png" alt="Digital Marketing">
+            </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="images/20180911090509731amazon_logo_RGB.webp" alt="Image 1" class="image1">
+            <img src="images/dribbble.webp" alt="Image 2" class="image2">
+            <img src="images/HubSpot-logo-color-1.webp" alt="Image 3" class="image3">
+            <img src="images/notion1411.webp" alt="Image 4" class="image4">
+            <img src="images/netflix-icon-black-2.webp" alt="Image 5" class="image5">
+            <img src="images/zoom.webp" alt="Image 6" class="image6">
+          
+        </div>
+
+        <div class="services-wrapper">
+            <span class="services-highlight">Services</span>
+            <div class="services-description">
+                At our digital marketing agency, we offer a range of services to<br>
+                help businesses grow and succeed online. These services include:
+            </div>
+        </div>
+        
+        <iframe src="services.html" style="width:100%; height:800px; border:none;"></iframe>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Let’s make things happen</h2>
+                <p>Contact us today to learn more about how our digital<br>
+                   marketing services can help your business grow and<br>
+                   succeed online.</p>
+                <button>Get your free proposal</button>
+            </div>
+            <img src="images/Screenshot 2024-07-04 at 7.50.46 PM.png" alt="Decorative Image" class="card-image">
+        </div>
+
+        <div class="services-wrapper">
+            <span class="services-highlight">Case Studies</span>
+            <div class="services-description">
+                Explore Real-Life Examples of Our Proven Digital Marketing<br>
+                Success through Our Case Studies
+            </div>
+        </div>
+
+        <div class="cards-container2">
+            <div class="card2">
+                <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                <a href="#" class="learn-more2">Learn more <span>➔</span></a>
+            </div>
+            <div class="card2">
+                <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                <a href="#" class="learn-more2">Learn more <span>➔</span></a>
+            </div>
+            <div class="card2">
+                <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                <a href="#" class="learn-more2">Learn more <span>➔</span></a>
+            </div>
+        </div>
+
+        <div class="services-wrapper">
+            <div class="services-description">
+                Step-by-Step Guide to Achieving<br> 
+                Your Business Goals
+            </div>
+        </div>
+        
+        <iframe src="collapse.html" style="width:100%; height:900px; border:none;"></iframe>
+
+        <div class="services-wrapper">
+            <span class="services-highlight">Team Label</span>
+            <div class="services-description">
+                Meet the skilled and experienced team behind our<br>
+                successful digital marketing strategies
+            </div>
+        </div>
+
+        <iframe src="cards.html" style="width:100%; height:550px; border:none;"></iframe>
+
+        <div class="services-wrapper">
+            <span class="services-highlight">Testimonials</span>
+            <div class="services-description" style="margin-bottom: 15px;">
+                Hear from Our Satisfied Clients: Read Our Testimonials<br>
+                to Learn More about Our Digital Marketing Services
+            </div>
+        </div>
+
+        <iframe src="carousal.html" style="width:100%; height:400px; border:black; border-radius: 20px; justify-content: start; align-items: center; margin-bottom: 5vh;"></iframe>
+
+        <div class="services-wrapper">
+            <span class="services-highlight">Contact Us</span>
+            <div class="services-description" style="margin-bottom: 15px;">
+                Connect with Us: Let's Discuss Your<br>
+                Digital Marketing Needs
+            </div>
+        </div>
+
+        <iframe src="form.html" style="width:100%; height:520px; background-color: white; border-radius: 50px; margin-bottom: 2rem; border: none;"></iframe>
+
+
+        <iframe src="footer.html" style="width:100%; height:340px; background-color: #191a23;   border-radius: 50px; border: none;"></iframe>
+
+        <script>
+            fetch('services.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('services-container').innerHTML = data;
+                });
+        </script>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+                menu.style.flexDirection = 'column';
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
+

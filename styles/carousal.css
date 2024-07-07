@@ -1,0 +1,79 @@
+
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #191a23;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40vh;
+    align-content: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: 100%;
+    padding: 30px;
+    border: 1px solid #B9FF66;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial p {
+    padding: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    width: 90%;
+    padding: 0 20px;
+    margin-top: 4rem;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #66ff66;
+}

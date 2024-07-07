@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/carousal.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="testimonial">
+                <p>"We have been working with Positivus for the past year."</p>
+                <h4>By : Baber John Smith</h4>
+                <p>Marketing Director at XYZ Corp</p>
+            </div>
+            <div class="testimonial">
+                <p>"Wonderful and professional."</p>
+                <h4>By : Hussian Jane Doe</h4>
+                <p>CEO at Infosys Inc</p>
+            </div>
+            <div class="testimonial">
+                <p>"Will leads as a result of their efforts. "</p>
+                <h4>By : Bigg Man Doe</h4>
+                <p>CEO at Bharath Inc</p>
+            </div>
+            <div class="testimonial">
+                <p>Positive Reviews for Positivus all over"</p>
+                <h4>By : Dhoni</h4>
+                <p>CEO at India Inc</p>
+            </div>
+            <div class="testimonial">
+                <p>"Appreciated , That was a very good one , liked it in all ways."</p>
+                <h4>By : Virat Kohli</h4>
+                <p>CEO at ICC Inc</p>
+            </div>
+            <div class="testimonial">
+                <p>"Quite Difficult to express in words it was an amazing service, One of the best ."</p>
+                <h4>By : Joshwa little</h4>
+                <p>CEO at BCCI Inc</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        <div class="controls">
+            <button class="arrow left" onclick="prevSlide()"><i class="fa fa-arrow-circle-o-left"></i></button>
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <!-- Add more dots as needed -->
+            </div>
+            <button class="arrow right" onclick="nextSlide()"><i class="fa fa-arrow-circle-o-right"></i></button>
+        </div>
+    </div>
+    <script src="carousel.js"></script>
+</body>
+</html>
